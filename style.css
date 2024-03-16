@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Geologica", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: rgb(243, 248, 255);
+}
+
+/* --------------------HEADER---------------------- */
+
+.header {
+  width: 100%;
+  padding: 30px 100px;
+  height: 100vh;
+  background-image: url(img/sukuna-smile.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: 10000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 30px;
+}
+
+span {
+  color: rgb(255, 31, 31);
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: rgb(197, 197, 197);
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: rgb(243, 248, 255);
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  background: rgb(255, 31, 31);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  opacity: 0;
+}
+
+nav ul li a:hover::after {
+  opacity: 1;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.btn {
+  background-color: rgb(255, 31, 31);
+  /* color: rgb(243, 248, 255); */
+  font-weight: 600;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: rgb(243, 248, 255);
+  background-color: rgb(255, 31, 31);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ------------------HOME--------------------- */
+
+.home {
+  margin-top: 15%;
+  padding: 0 6%;
+  width: 100%;
+  line-height: 1.3;
+}
+
+.conatiner-home {
+  width: 75%;
+}
+
+.conatiner-home h1 {
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+
+.conatiner-home h3 {
+  margin-bottom: 10px;
+}
+
+.conatiner-home h2 {
+  color: rgb(255, 31, 31);
+}
+
+.conatiner-home p {
+  padding-top: 10px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+/* ------------------ABOUT--------------------- */
+
+.about {
+  background: rgb(25, 25, 25);
+}
+
+.container-about {
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box-img img {
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgb(197, 197, 197);
+}
+
+.box-about h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.box-about h3 span {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  background: linear-gradient(
+    transparent 0,
+    transparent 30%,
+    yellow 80%,
+    transparent 80%,
+    transparent 100%
+  );
+  display: inline;
+}
+
+.box-about h3 {
+  margin-bottom: 5px;
+}
+
+.box-about p {
+  line-height: 1.4;
+}
+
+/* -----------------SERVICES---------------- */
+
+.services {
+  background: rgb(25, 25, 25);
+  padding: 100px;
+}
+
+.services h1 {
+  font-size: 3rem;
+  color: rgb(255, 31, 31);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-ser {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.container-ser:hover .box1 {
+  filter: brightness(50%);
+  transition: 0.2s ease-in;
+}
+
+.container-ser .box1:hover {
+  filter: brightness(100%);
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.box1 {
+  width: 100%;
+  box-shadow: 0 0 5px 2px rgb(197, 197, 197);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.box1 i {
+  font-size: 5rem;
+  color: rgb(255, 31, 31);
+  margin-bottom: 10px;
+}
+
+.box1 p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* ----------------------CONTACT----------------- */
+
+.contact {
+  background-color: rgb(25, 25, 25);
+  padding: 100px 200px;
+}
+
+.contact h1 {
+  font-size: 3rem;
+  color: rgb(255, 31, 31);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form {
+  background-image: url(img/satorugojo.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 30px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px rgb(197, 197, 197);
+}
+
+.input1 {
+  border: 2px solid rgb(197, 197, 197);
+  width: 400px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.input1 input {
+  width: 100%;
+  height: 100%;
+  padding-left: 35px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: none;
+  color: rgb(243, 248, 255);
+  outline: none;
+}
+
+.box-input i {
+  position: absolute;
+  left: 19.3%;
+  margin-top: 12px;
+}
+
+.box-btn button {
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(255, 31, 31);
+  margin-bottom: 20px;
+}
+
+.box-btn button:hover {
+  color: rgb(243, 248, 255);
+  background-color: rgb(255, 31, 31);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.text-area textarea {
+  width: 400px;
+  border-radius: 10px;
+  border: 2px solid rgb(197, 197, 197);
+  background-color: transparent;
+  padding: 10px;
+  color: rgb(243, 248, 255);
+  outline: none;
+}
